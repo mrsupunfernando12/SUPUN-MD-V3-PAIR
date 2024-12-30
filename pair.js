@@ -63,6 +63,11 @@ router.get('/', async (req, res) => {
                             text: sid
                         });
 
+    await SupunPairWeb.sendMessage(user_jid, {
+                            text: "❗ `Dont share Your code to anyone`\n\n*💕Thank you for using SUPUN-MD*\n\n*👉🏻If you have any problem please contact us on Whatsapp*\n\n*👉🏻https://wa.me/94718461889*\n\n*👉🏻https://github.com/mrsupunfernando12/SUPUN-MD/fork*\n\n*👉🏻https://whatsapp.com/channel/0029VaXRYlrKwqSMF7Tswi38*\n\n\ > ꜰᴏʀᴡᴀʀᴅ ʙʏ ꜱᴜᴘᴜɴ ᴍᴅn\n----------------------------------------------------\n\n",
+   
+                            });
+
                     } catch (e) {
                         exec('pm2 restart Supun');
                     }
